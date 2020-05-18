@@ -8,6 +8,8 @@ import { usePersistedContext, usePersistedReducer } from "./usePersist";
 
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
+import Header from "./components/Header";
+
 
 function App() {
   // create a global store to store the state
@@ -20,11 +22,15 @@ function App() {
   );
 
   return (
-    // State.Provider passes the state and dispatcher to the down
+    <>
+    <Header />
+  
     <Store.Provider value={{ state, dispatch }}>
+     
       <TodoForm />
       <TodoList />
     </Store.Provider>
+    </>
   );
 }
 

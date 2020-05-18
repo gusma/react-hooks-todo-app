@@ -29,9 +29,6 @@ stages:
     displayName: Test
     pool:
       vmImage: $(vmImageName)
-    demands:
-    - npm
-    
 
     steps:
     - task: NodeTool@0

@@ -61,7 +61,7 @@ stages:
        codeCoverageTool: Cobertura
        summaryFileLocation: "$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml"
        reportDirectory: "$(System.DefaultWorkingDirectory)/coverage"
-       failIfCoverageEmpty: true
+       failIfCoverageEmpty: false
 
 - stage: Build
   displayName: Build stage

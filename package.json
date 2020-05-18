@@ -18,24 +18,15 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test2": "jest --coverage --coverageDirectory=output/coverage/jest",
     "test": "jest --coverage --coverageDirectory=output/coverage/jest",
     "coverage": "jest --coverage --coverageReporters=cobertura",
     "eject": "react-scripts eject"
   },
   "jest": {
-      "coverageReporters": [
-        "text"
-      ],
-      "reporters": [
-        "default",
-        "jest-junit"
-      ],
-    },
-    "jest-junit": {
-      "output": "output/coverage/junit/junit.xml",
-      "usePathForSuiteName": "true"
-    
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]
   },
   "browserslist": [
     ">0.2%",
